@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #F0F0F7;
+  --purple-light: #916BEA;
+  --purple-primary: #8257E5;
+  --gray: #9C98A6;
+  --gray-light: #E6E6F0;
+  --pink: #F89CBF;
+  --text-title: #32264D;
+  --text: #161616;
+  --small-text: #C1BCCC;
+  --botton: #F51556;
+}
+
+.container {
+  position: relative;
+}
+
+.container .top {
+  background: var(--pink);
+  width: 100%;
+  height: 50vh;
+}
+.container .botton {
+  background: var(--background);
+  width: 100%;
+  height: 50vh;
+}
+
+.flip-card {
+  position: absolute;
+  background: url("./images/bg-flipcard.png") no-repeat;
+  width: 900px;
+  height: 450px;
+  top: 25%;
+  left: 25%;
+}
