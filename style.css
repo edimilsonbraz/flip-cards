@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caladea:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -17,12 +20,22 @@
   --botton: #F51556;
 }
 
+body {
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3 {
+  color: var(--gray-light);
+}
+a {
+  text-decoration: none;
+}
+
 .container {
   position: relative;
 }
 
 .container .top {
-  background: var(--pink);
+  background: var(--purple-light);
   width: 100%;
   height: 50vh;
 }
@@ -34,9 +47,72 @@
 
 .flip-card {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: url("./images/bg-flipcard.png") no-repeat;
   width: 900px;
   height: 450px;
   top: 25%;
   left: 25%;
+  /* box-shadow: -10px 20px 25px var(--gray); */
+}
+.flip-card .content-text h1 {
+  font-family: 'Caladea', serif;
+  font-size: 54px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 28px;
+  margin-bottom: 18px;
+  color: var(--gray-light);
+}
+.flip-card .content-text p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin-left: 28px;
+  margin-bottom: 54px;
+}
+.flip-card .content-text a {
+  color: #fff;
+  background: var(--botton);
+  display: block;
+  padding: 18px;
+  margin-left: 28px;
+  border-radius: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.flips {
+  
+  margin-right: 18px;
+  /*margin-top: 18px; */
+}
+
+.flips .line-flips {
+  display: flex;
+  gap: 18px;
+  margin: 18px;
+}
+.flip-card .flips-number {
+  /* color: #fff; */
+  background: #3F3F3F;
+  width: 115px;
+  height: 115px;
+  font-size: 48px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+}
+
+.flip-card .flips-number a {
+  color: #fff;
+  
 }
